@@ -21,7 +21,7 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Card
+import Card from "./CharCard";
 
 
 
@@ -55,7 +55,7 @@ let character = data.map(sw => {
         />
     );
 });
-return {character};
+return <span>{character}</span>
 };
 
 

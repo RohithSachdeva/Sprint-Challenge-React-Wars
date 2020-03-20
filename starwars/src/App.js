@@ -16,6 +16,6 @@ const App = () => {
       <CharList />
     </div>
   );
-}
+};
 
 export default App;
