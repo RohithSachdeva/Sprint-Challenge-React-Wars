@@ -2,11 +2,14 @@
 
 import React, { useState, useEffect } from "react";
 import Charlist from "./CharList";
-import axios from "axios";
-import { Jumbotron, Button } from "reactstrap";
+
+import { Jumbotron, Button, Alert } from "reactstrap";
 
 export default function Card(props) {
-    console.log(props);
+    //console.log(props);
+    const birthday = function() {
+        return alert(`${props.birth}`)
+    }
     return (
         <div class="container"> 
             <Jumbotron>
@@ -14,7 +17,8 @@ export default function Card(props) {
                 <h2 className="display-4">Gender: {props.gender}</h2>
                 <h3 className="display-4">Mass(kg): {props.mass}</h3>
                 <h3 className="display-4">Hair Color: {props.hairColor}</h3>
-                <Button color="primary">Click for my {props.birth}</Button>
+                <Button color="primary" onClick={birthday}>Click for my birth year</Button>
+                
             </Jumbotron>
         </div>
     )
