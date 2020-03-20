@@ -26,6 +26,7 @@ import Card from "./CharCard";
 
 
 
+
 export default function CharList(){
 const [data, setData] = useState([]);
 
@@ -51,7 +52,9 @@ let character = data.map(sw => {
         name = {sw.name}
         mass = {sw.mass}
         hairColor = {sw.hair_color}
-        films = {sw.films}
+        gender = {sw.gender}
+        skin = {sw.skin_color}
+        birth = {sw.birth_year}
         />
     );
 });
